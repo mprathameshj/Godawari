@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateMainBannerActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/imageView5"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_image" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/linear"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/text_background"
+        android:drawablePadding="2dp"
+        android:fontFamily="@font/inter_regular"
+        android:inputType="text"
+        android:hint="Link of the poster"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="#013ADF"
+        android:textColorLink="#1976D2"
+        android:textSize="14sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/arrow_back_basic_svgrepo_com" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+       android:background="@drawable/button_background"
+        android:fontFamily="@font/inter_medium"
+        android:text="Update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#0E0E0E" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_background"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="Delete all previous banners"
+        android:textColor="@color/yellow_black" />
+
+
+</RelativeLayout>

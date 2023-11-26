@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSellerActivity" >
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Become a seller"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>>
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="By registering as a seller, you agree to our terms and conditions. "
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView25"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Owner name"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etOwnerName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView15"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_below="@id/etOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="shop/market name"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etShopName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView4"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etShopName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="mobile number"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView13"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="fill"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPhone"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Email"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView14"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="fill"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etEmail"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="GSTIN"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etGstin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView12"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="fill"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etGstin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/inter_light"
+                android:text="shop address"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView16"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/etPincode"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+
+                    android:background="@drawable/text_background"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Pincode"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#013ADF"
+                    android:textColorLink="#1976D2"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/etState"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/text_background"
+
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="#013ADF"
+                    android:textColorLink="#1976D2"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/linear"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_background"
+                android:fontFamily="@font/inter_regular"
+                android:hint="City"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCity"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_light"
+                    android:text="detailed address"
+                    android:textColor="@color/Orange_black"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etDetailAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="textMultiLine"
+                android:minHeight="45dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btn_Register"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etDetailAdd"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="Register &amp; continue"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

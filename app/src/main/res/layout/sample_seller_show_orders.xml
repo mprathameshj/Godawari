@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="2dp"
+                android:layout_toLeftOf="@+id/Date"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="textMultiLine"
+                android:text="Vivo v27 Pro"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:text="05/03/2023"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Colour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:text="Colour: Navy Blue"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Ram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Colour"
+                android:layout_marginStart="2dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:text="Ram: 6GB,128GB"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Colour"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:text="New"
+                android:textColor="@color/crimsonRed" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

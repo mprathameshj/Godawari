@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "749590225881",
+    "project_id": "godawari-bc5b8",
+    "storage_bucket": "godawari-bc5b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749590225881:android:69638aefbed6c81d9aafc8",
+        "android_client_info": {
+          "package_name": "com.example.godawari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749590225881-udeppq5niubh6rrgom3nmhob0ai72as1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGFE1edgWMWsOxI4lIesDnhD1M0u-KTjk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749590225881-udeppq5niubh6rrgom3nmhob0ai72as1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

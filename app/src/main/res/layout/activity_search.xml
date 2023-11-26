@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:id="@+id/relative_not_found">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="70dp"
+            android:src="@drawable/page_error" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transperent_textview"
+            android:text="No result found!"
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@id/image1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/transperent_textview"
+            android:fontFamily="@font/inter_regular"
+            android:text="Consider reviewing your spelling or modifying your search keywords "
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_below="@+id/textView1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/add_background"
+            android:fontFamily="@font/inter_regular"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:text="Try again"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imageView4"
+        android:theme="@style/CustomSearchActivityStyle1"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@color/white"
+        app:searchIcon="@drawable/searchbar"
+
+        >
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/btn_filtre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filtre_back"
+        android:drawableStart="@drawable/filtre_1"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:text="Filter"
+        android:textColor="@color/charcole"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_filtre_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_filtre"
+        android:background="@drawable/filtre_back"
+        android:drawableStart="@drawable/price_tag_svgrepo_com"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:text="Price"
+        android:textColor="@color/charcole"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_filtre_ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btn_filtre_price"
+        android:background="@drawable/filtre_back"
+        android:drawableStart="@drawable/tshirt"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="15dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="8dp"
+        android:text="Ram"
+        android:textColor="@color/charcole"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="10dp"
+        app:srcCompat="@drawable/mycart" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyckleSearch"
+        android:layout_below="@id/btn_filtre"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

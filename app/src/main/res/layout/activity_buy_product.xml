@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/buy_relative"
+    tools:context=".BuyProductActivity">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/arrow_back_basic_svgrepo_com" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:srcCompat="@drawable/mycart" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyckler"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@id/btn_back"
+                android:layout_marginTop="5dp" />
+
+            <me.relex.circleindicator.CircleIndicator2
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyckler"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                app:ci_drawable="@drawable/selected"
+                app:ci_drawable_unselected="@drawable/un_selected" />
+
+
+            <TextView
+                android:id="@+id/ProductUavailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/indicator"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:longClickable="false"
+                android:textColor="@color/crimsonRed"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ProductUavailable"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:text="Select Variant"
+                android:textColor="@color/Orange_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/warnigRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:textColor="@color/crimsonRed"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/etColour"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/warnigRam"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/colour_background"
+                android:drawableStart="@drawable/circles_svgrepo_com"
+                android:drawableEnd="@drawable/right_arrow_backup_2_svgrepo_com"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_vertical"
+                android:inputType="textNoSuggestions|text"
+                android:longClickable="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Colour:"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/etRam"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etColour"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/colour_background"
+                android:drawableStart="@drawable/server_svgrepo_com"
+                android:drawableEnd="@drawable/right_arrow_backup_2_svgrepo_com"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_vertical"
+                android:inputType="textNoSuggestions|text"
+                android:longClickable="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="RAM and Storage:"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/RamNotAvailable"
+                android:background="@drawable/buy_background"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/RamNotAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etRam"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:textColor="@color/crimsonRed"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear6"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="textNoSuggestions|text"
+                android:longClickable="false"
+                android:text="Vivo V27 Pro (Ocean blue) (8GB , 128GB)"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rate"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="-60dp"
+                android:layout_marginTop="-10dp"
+                android:longClickable="false"
+                android:numStars="5"
+                android:progressTint="@color/Darkgraan"
+                android:rating="4.4"
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
+
+
+            <TextView
+                android:id="@+id/CutPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:text="31,999"
+                android:textColor="#6F7275"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/SellingPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_marginStart="5dp"
+                android:layout_toRightOf="@+id/CutPrice"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:text="\u20B927,999"
+                android:textColor="@color/Orange_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CutPrice"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:longClickable="false"
+                android:text="21% off"
+                android:textColor="@color/Darkgraan"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Off"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:longClickable="false"
+                android:text="You will save \u20B93850 on this order"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/PackingFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Save"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:longClickable="false"
+                android:text="\u20B989 Packaging fee"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/Gwallet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/PackingFee"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dial_pad"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|start"
+                android:longClickable="false"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="You will earn \u20B950 in your G-wallet on this order"
+                android:textColor="@color/Darkgraan"
+                android:textSize="14sp" />
+
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/Gwallet"
+                android:layout_alignTop="@+id/Gwallet"
+                android:layout_alignRight="@+id/Gwallet"
+                android:layout_alignBottom="@+id/Gwallet">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true" />
+
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/Free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Gwallet"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/transperent_textview"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center|center_vertical"
+                android:longClickable="false"
+                android:text="Free delivery"
+                android:textColor="@color/Darkgraan"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/DeleverTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Free"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:longClickable="false"
+                android:text="Deliver to"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/etAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DeleverTo"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:longClickable="false"
+                android:maxWidth="250dp"
+                android:minHeight="40dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/etAddress"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buy_background"
+                android:orientation="horizontal" />
+
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear5"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/replace_svgrepo_com" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/savings_rupee_svgrepo_com" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.33"
+                    android:src="@drawable/inspection_svgrepo_com" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear3"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.34"
+                    android:background="@drawable/transperent_textview"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:text="7 days replacement"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/cashOnDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/transperent_textview"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10dp"
+                    android:text="Cash on delivery available"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:background="@drawable/transperent_textview"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="10dp"
+                    android:text="6 quality checks"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@id/linear4"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buy_background"
+                android:orientation="horizontal" />
+
+
+            <TextView
+                android:id="@+id/ProductDetails"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@id/linear2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="start|center_vertical"
+                android:longClickable="false"
+                android:paddingStart="15dp"
+                android:text="Product Details"
+                android:textColor="@color/Orange_black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/etSpecification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ProductDetails"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="start"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:longClickable="false"
+                android:minHeight="100dp"
+                android:paddingTop="10dp"
+                android:textColor="#333333"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnSelectAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/DeleverTo"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toRightOf="@id/etAddress"
+                android:background="@drawable/text_background"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:longClickable="false"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:text="Add new address +"
+                android:textAppearance="@style/MyBottomNavigationTextStyle"
+                android:textColor="@color/Project_blue"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linear7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="15dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/AddTocart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.5"
+            android:background="#629DF8"
+            android:elevation="1dp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="Add to cart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.5"
+            android:background="@color/Bright_Orange"
+            android:elevation="1dp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:longClickable="false"
+            android:text="Buy now"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    -->
+
+
+</RelativeLayout>

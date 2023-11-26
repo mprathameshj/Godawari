@@ -1,0 +1,107 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Godawari" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue2</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+
+    <style name="MyBottomNavigationTextStyle" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.MaterialComponents.Light">
+        <!-- Customize selected tab color -->
+        <item name="colorPrimary">@color/Project_blue</item>
+        <item name="colorOnPrimary">@color/Project_blue</item>
+
+        <!-- Set status bar color -->
+        <item name="android:statusBarColor">@color/blue1</item>
+    </style>
+
+    <style name="CustomSearchViewStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColorHint">#4F5255</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_light</item>
+    </style>
+
+
+    <style name="CustomSearchActivityStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColorHint">#4F5255</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="SearchViewStyle" parent="Theme.MaterialComponents.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="myDialogue" parent="Theme.AppCompat.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+
+
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+
+    <style name="CustomRadioButton" parent="Theme.MaterialComponents.Light">
+        <item name="colorAccent">@color/neon_blue</item>
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="CustomSearchActivityStyle1" parent="Theme.MaterialComponents.Light">
+        <item name="android:textColorHint">#4F5255</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="MyToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/Bright_Orange</item>
+    </style>
+
+
+
+    <style name="MyTheme1" parent="Theme.MaterialComponents.Light">
+        <!-- Customize selected tab color -->
+        <item name="colorPrimary">@color/Project_blue</item>
+        <item name="colorOnPrimary">@color/Project_blue</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+</resources>

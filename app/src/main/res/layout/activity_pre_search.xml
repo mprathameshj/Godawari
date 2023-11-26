@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:theme="@style/CustomSearchActivityStyle"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@color/white"
+        app:searchIcon="@drawable/searchbar"
+        >
+
+    </androidx.appcompat.widget.SearchView>
+
+
+    <ImageView
+        android:id="@+id/mic"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/mic"
+        android:layout_marginEnd="20dp"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/search_bar"
+        android:layout_alignTop="@+id/search_bar"
+        android:layout_alignRight="@+id/search_bar"
+        android:layout_alignBottom="@+id/search_bar">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:theme="@style/CustomSearchActivityStyle"
+            app:queryHint="Search for products"
+            android:drawableStart="@drawable/transperent_textview"
+            android:drawablePadding="60dp"
+            android:hint="Search for product"
+            />
+
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear6"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@id/search_bar"
+        android:background="@drawable/buy_background"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/linear6"
+        android:background="@drawable/transperent_textview"
+        android:drawableStart="@drawable/searchbar1"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/inter_medium"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/linear8"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/searchText"
+        android:background="@drawable/buy_background"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyckleSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/searchText" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="-2dp"
+        android:layout_below="@id/recyckleSearch"
+        android:background="@drawable/buy_background"
+        android:id="@+id/linear"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/transperent_textview"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:text="Recommended for you"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycklerRecom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/textView" />
+
+
+</RelativeLayout>

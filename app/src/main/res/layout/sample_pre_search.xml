@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/PreName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="70dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/transperent_textview"
+        android:drawableStart="@drawable/searchbar"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Vivo v 27 pro"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/PreImage"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buy_background" />
+
+    <ImageView
+        android:id="@+id/PreImage"
+        android:layout_width="29dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="25dp" />
+
+</RelativeLayout>

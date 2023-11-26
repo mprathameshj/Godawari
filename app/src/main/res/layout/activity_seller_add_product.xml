@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SellerAddProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyckler"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/text_background" />
+
+            <TextView
+                android:id="@+id/btn_addImage"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView18"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/etColour"
+                android:background="@drawable/add_background"
+                android:drawableEnd="@drawable/add_svgrepo_com"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Add images"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/AddRam"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/etColour"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center_horizontal|center_vertical"
+                android:inputType="text"
+                android:text="Select Ram"
+                android:textColor="@color/Project_blue"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/DeleteColourRam"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/etColour"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/AddRam"
+                android:background="@drawable/delete_backgroung"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Delete Ram"
+                android:textAppearance="@style/MyBottomNavigationTextStyle"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/AddRamShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AddRam"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/transperent_textview"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/Orange_black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_addphoto"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Product Name"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView15"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etProductName"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Default price"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etDefaultPrice"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView30"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDefaultPrice"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Default RAM and ROM"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etDefaultRam"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView39"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etProductName"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView30"
+                android:fontFamily="@font/inter_light"
+                android:text="Retail price"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etRetailpriceMain"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView31"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toRightOf="@+id/textView30"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDefaultRam"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="RAM and ROM "
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/etRam1"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView17"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center|left"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDefaultRam"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView17"
+                android:fontFamily="@font/inter_light"
+                android:text="Selling prise "
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etSellingPrise"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView19"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/textView17"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDefaultRam"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView19"
+                android:fontFamily="@font/inter_light"
+                android:text="Retail prise "
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etRetailprice"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView20"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toRightOf="@id/textView19"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="number"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/buttonAddRam"
+                android:layout_width="48dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/etRam1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_background"
+                android:gravity="center"
+                android:text="Add"
+                android:textAppearance="@style/MyBottomNavigationTextStyle"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/buttonDeleteRam"
+                android:layout_width="48dp"
+                android:layout_height="25dp"
+                android:layout_below="@id/etRam1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/buttonAddRam"
+                android:background="@drawable/delete_backgroung"
+                android:gravity="center"
+                android:text="Delete"
+                android:textAppearance="@style/MyBottomNavigationTextStyle"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textViewRam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonAddRam"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/Orange_black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyckler"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Colour name(dont add default colour here)"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etColour"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView18"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_uploadImages"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/AddRamShow"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp"
+                android:text="Upload images  "
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageBanner"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_below="@id/btn_uploadImages"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_background" />
+
+
+            <TextView
+                android:id="@+id/btn_addphoto"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/imageBanner"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_background"
+                android:drawableEnd="@drawable/add_svgrepo_com"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Add profile photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/btnUploadPhoto"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/imageBanner"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/btn_addphoto"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Upload photo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/textViewColour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_uploadImages"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/Orange_black"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewRam"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Retail Price"
+                android:textColor="@color/electric_red"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView21"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Retail price for this product,this is not the actual selling price of the product, but rather a higher price that some local shopkeepers may charge for it. The purpose of showing this higher price is to provide a reference point for the discount being offered to the customer. By displaying the original or high price alongside the discounted price, the customer can see how much money they are saving on the product. This can make the discounted price more appealing and encourage the customer to make a purchase."
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Camera"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etCamera"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView35"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etCamera"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Battery"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etBattery"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView36"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etBattery"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Selfie Camera"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etSelfieCamera"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView41"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etSelfieCamera"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Display"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView37"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDisplay"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Note"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textView42"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="Special offer,Lowest price,Daily saver"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etNote"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Product Discription"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView14"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:hint="Add the tags here so that user can search for product"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etDiscription"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_light"
+                android:text="Specifications"
+                android:textColor="@color/Orange_black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etSpecification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView22"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/text_background"
+                android:drawablePadding="2dp"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="#013ADF"
+                android:textColorLink="#1976D2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/etSpecification"
+                android:layout_marginTop="10dp"
+                android:text="Cash on delivery"
+                android:textSize="14sp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etSpecification"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView54"
+                android:layout_marginStart="10dp"
+                android:id="@+id/chipCashOnDelivery"/>
+
+            <TextView
+                android:id="@+id/btn_addproduct"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/textView54"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="Add product"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
